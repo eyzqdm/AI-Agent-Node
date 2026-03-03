@@ -1,0 +1,19 @@
+{
+  "name": "ai-agent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@8.15.4+sha512.0bd3a9be9eb0e9a692676deec00a303ba218ba279d99241475616b398dbaeedd11146f92c2843458f557b1d127e09d4c171e105bdcd6b61002b39685a8016b9e",
+  "dependencies": {
+    "@langchain/core": "^1.1.29",
+    "@langchain/openai": "^1.2.11",
+    "dotenv": "^17.3.1",
+    "zod": "^4.3.6"
+  }
+}
