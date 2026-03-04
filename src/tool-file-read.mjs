@@ -81,7 +81,7 @@ while (response.tool_calls && response.tool_calls.length > 0) {
     // 将工具结果添加到消息历史
     response.tool_calls.forEach((toolCall, index) => {
         messages.push(
-            new ToolMessage({
+            new ToolMessage({ // 组装成ToolMessage
                 content: toolResults[index],
                 tool_call_id: toolCall.id, // 传入id，保持与原始调用保持一致，也就是告诉大模型，你让我调用的哪个工具，返回的结果是什么
             })
