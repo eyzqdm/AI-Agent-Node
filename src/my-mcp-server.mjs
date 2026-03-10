@@ -70,4 +70,4 @@ server.registerResource('使用指南', 'docs://guide', {
 
 
 const transport = new StdioServerTransport();
-await server.connect(transport);    
+await server.connect(transport);
