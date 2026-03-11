@@ -27,6 +27,9 @@ rag:（检索 增强 生成）
 4. 组装增强后的prompt，包含问题和检索到的文档
 5. 调用大模型，传入增强后的prompt，返回大模型的回复
 
+chunkOverlap：每个文档片段之间的重叠字符数，用于保持文档的连贯性（当按标点分割后的文本仍然超过了 chunkSize 时，就会出现重叠）
+
+RecursiveCharacterTextSplitter：递归字符文本分割器，用于将文本递归地按指定的分隔符分割成多个文档片段,相对比较灵活
 
 如何封装http mcp server：
 1. 搭建http server
