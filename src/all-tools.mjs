@@ -18,7 +18,7 @@ const readFileTool = tool(
     },
     {
         name: 'read_file',
-        description: '读取指定路径的文件内容',
+        description: '读取指定路径的文件内容', //description 是工具的描述，用于提示大模型何时调用此工具
         schema: z.object({
             filePath: z.string().describe('文件路径'),
         }),
