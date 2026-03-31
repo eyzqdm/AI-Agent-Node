@@ -42,7 +42,7 @@ const mcpClient = new MultiServerMCPClient({
     }
 });
 
-const tools = await mcpClient.getTools();
+const tools = await mcpClient.getTools(); // 从 MCP 服务获取工具集
 const modelWithTools = model.bindTools(tools);
 
 async function runAgentWithTools(query, maxIterations = 30) {
